@@ -6,8 +6,7 @@
     <title>The KEET</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <script defer src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script defer src="./assets/js/main.js"></script>
+    <link rel="stylesheet" href="./assets/css/fundspage.css">
     <link
       rel="shortcut icon"
       href="./assets/img/logo_trans_blue 1.png"
@@ -57,7 +56,8 @@
             <div class="bg-primary p-2 notif rounded">
               <abbr title="0 New Notification"><i class="fa-solid fa-bell" style="color: #ffffff"></i></abbr>
             </div>
-            <img src="./assets/img/Group 30.png" id="hamburgerMenu" class="d-lg-none d-xl-none d-block hamburger img-fluid" alt="">
+
+              <img src="./assets/img/Group 30.png" id="hamburgerMenu" class="d-lg-none d-xl-none d-block hamburger img-fluid" alt="">
           </div>
         </div>
       </nav>
@@ -70,7 +70,7 @@
       
       <!-- Left Sidebar -->
       <nav
-        class="left-div col-lg-3 col-xl-3 ps-3 ps-xl-4 bg-white shadow-sm"
+        class="left-div col-lg-3 col-xl-3 ps-3 ps-xl-4 bg-white shadow-sm hide-left-sidebar show-left-sidebar"
         id="left-sidebar"
       >
         <div class="menu-opt pt-3 fw-semibold">Main Menu</div>
@@ -130,252 +130,117 @@
         </div>
       </nav>
 
-      <!-- Main Content -->
-      <section
-        class="right-div mt-4 col-12 col-md-7 col-lg-6 col-xl-6 px-3 px-md-5 border-end"
+      <!-- middle Content -->
+      <div
+        class="right-div mt-4 col-12 col-md-7 col-lg-6 col-xl-6 
+        px-3 px-md-5 border-end"
       >
-        <div class="right-content">
-          <!-- Account Balance -->
-          <div class="account-balance-section mb-5">
-            <div class="balance-background"></div>
-            <div class="available-balance bg-white shadow-sm rounded-4 p-4">
-              <div class="text-center mb-2">
-                <div class="text-muted small">Available Balance</div>
-                <h4 class="mb-3 fw-bold">NGN 4,500.00</h4>
-              </div>
-              <button
-                class="btn btn-primary d-flex align-items-center justify-content-center w-100"
-              >
-                <img
-                  src="./assets/img/Yandex Money (1).png"
-                  alt="Add Funds"
-                  class="me-2"
-                  style="width: 24px; height: 24px"
-                />
-                <span>Add Funds</span>
-              </button>
-            </div>
+        <div id="wallet-div" class="rounded-bottom-5">
+          <h5>Wallet</h5>
+          <p>Available balance</p>
+          <h3>NGN 9,500.00</h3>
+          <div id="top-up" class="bg-primary py-2 px-3 rounded rounded-4">
+            <img src="./assets/img/Yandex Money (1).png" alt="">
+            <span>Top Up</span>
           </div>
 
-          <!-- Carousel section -->
-          <swiper-container class="mySwiper" init="false">
-            <swiper-slide>
-                <div class="row mx-auto rounded shadow p-3">
-                    <div class="col-3 d-flex justify-content-center align-items-center">
-                        <img src="./assets/img/3225191_app_instagram_logo_media_popular_icon.png" alt="" class="w-100">
-                    </div>
-                    <div class="col-9">
-                        <div class="d-flex justify-content-between align-items-start">
-                            <h5>Instagram</h5>
-                            <p>#2.34</p>
-                        </div>
-                        <p>
-                            Instagram - Mixed Data Scrape
-                            ( Username-Comment -Location-Like-Hashtag )
-                        </p>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="row mx-auto rounded shadow p-3">
-                    <div class="col-3 d-flex justify-content-center align-items-center">
-                        <img src="./assets/img/3225191_app_instagram_logo_media_popular_icon.png" alt="" class="w-100">
-                    </div>
-                    <div class="col-9">
-                        <div class="d-flex justify-content-between align-items-start">
-                            <h5>Instagram</h5>
-                            <p>#2.34</p>
-                        </div>
-                        <p>
-                            Instagram - Mixed Data Scrape
-                            ( Username-Comment -Location-Like-Hashtag )
-                        </p>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="row mx-auto rounded shadow p-3">
-                    <div class="col-3 d-flex justify-content-center align-items-center">
-                        <img src="./assets/img/3225191_app_instagram_logo_media_popular_icon.png" alt="" class="w-100">
-                    </div>
-                    <div class="col-9">
-                        <div class="d-flex justify-content-between align-items-start">
-                            <h5>Instagram</h5>
-                            <p>#2.34</p>
-                        </div>
-                        <p>
-                            Instagram - Mixed Data Scrape
-                            ( Username-Comment -Location-Like-Hashtag )
-                        </p>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="row mx-auto rounded shadow p-3">
-                    <div class="col-3 d-flex justify-content-center align-items-center">
-                        <img src="./assets/img/3225191_app_instagram_logo_media_popular_icon.png" alt="" class="w-100">
-                    </div>
-                    <div class="col-9">
-                        <div class="d-flex justify-content-between align-items-start">
-                            <h5>Instagram</h5>
-                            <p>#2.34</p>
-                        </div>
-                        <p>
-                            Instagram - Mixed Data Scrape
-                            ( Username-Comment -Location-Like-Hashtag )
-                        </p>
-                    </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="row mx-auto rounded shadow p-3">
-                    <div class="col-3 d-flex justify-content-center align-items-center">
-                        <img src="./assets/img/3225191_app_instagram_logo_media_popular_icon.png" alt="" class="w-100">
-                    </div>
-                    <div class="col-9">
-                        <div class="d-flex justify-content-between align-items-start">
-                            <h5>Instagram</h5>
-                            <p>#2.34</p>
-                        </div>
-                        <p>
-                            Instagram - Mixed Data Scrape
-                            ( Username-Comment -Location-Like-Hashtag )
-                        </p>
-                    </div>
-                </div>
-            </swiper-slide>
-          </swiper-container>
-
-          <!-- Social Media Section -->
-          <div class="media pt-5">
-            <h5 class="fw-light">Social Media</h5>
-            <div class="bg-white p-3 rounded-4 shadow-sm">
-              <div class="row g-2">
-                <div class="col-6 col-md-3 text-center">
-                  <a href="#">
-                    <img src="./assets/img/Twitter.png" alt="" />
-                    <div class="fw-light fs-6">X (Twitter)</div>
-                  </a>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                  <a href="#">
-                    <img src="./assets/img/Facebook.png" alt="" />
-                    <div class="fw-light fs-6">Facebook</div>
-                  </a>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                  <a href="#">
-                    <img src="./assets/img/Instagram.png" alt="" />
-                    <div class="fw-light fs-6">Instagram</div>
-                  </a>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                  <a href="#">
-                    <img src="./assets/img/Hamburger.png" alt="" />
-                    <div class="fw-light fs-6">All category</div>
-                  </a>
-                </div>
-              </div>
-              <div class="row g-2 pt-3">
-                <div class="col-6 col-md-3 text-center">
-                  <a href="#">
-                    <img src="./assets/img/Twitter.png" alt="" />
-                    <div class="fw-light fs-6">X (Twitter)</div>
-                  </a>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                  <a href="#">
-                    <img src="./assets/img/Facebook.png" alt="" />
-                    <div class="fw-light fs-6">Facebook</div>
-                  </a>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                  <a href="#">
-                    <img src="./assets/img/Instagram.png" alt="" />
-                    <div class="fw-light fs-6">Instagram</div>
-                  </a>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                  <a href="#">
-                    <img src="./assets/img/Hamburger.png" alt="" />
-                    <div class="fw-light fs-6">All category</div>
-                  </a>
-                </div>
-              </div>
+          <div class="d-flex justify-content-between p-4" id="deposit-spent-div">
+            <div id="total-depo" class="bg-white text-dark py-3 px-3 rounded-4">
+              <p>total deposit</p>
+              <h5>#51,000</h5>
             </div>
-          </div>
-
-          <!-- Entertainment Section -->
-          <div class="media pt-5">
-            <h5 class="fw-light">Entertainment</h5>
-            <div class="bg-white p-3 rounded-4 shadow-sm">
-              <div class="row g-2">
-                <div class="col-6 col-md-3 text-center">
-                  <a href="#">
-                    <img src="./assets/img/Twitter.png" alt="" />
-                    <div class="fw-light fs-6">X (Twitter)</div>
-                  </a>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                  <a href="#">
-                    <img src="./assets/img/Facebook.png" alt="" />
-                    <div class="fw-light fs-6">Facebook</div>
-                  </a>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                  <a href="#">
-                    <img src="./assets/img/Instagram.png" alt="" />
-                    <div class="fw-light fs-6">Instagram</div>
-                  </a>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                  <a href="#">
-                    <img src="./assets/img/Hamburger.png" alt="" />
-                    <div class="fw-light fs-6">All category</div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Business Section -->
-          <div class="media pt-5 pb-2">
-            <h5 class="fw-light">Business</h5>
-            <div class="bg-white p-3 rounded-4 shadow-sm">
-              <div class="row g-2">
-                <div class="col-6 col-md-3 text-center">
-                  <a href="#">
-                    <img src="./assets/img/Twitter.png" alt="" />
-                    <div class="fw-light fs-6">X (Twitter)</div>
-                  </a>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                  <a href="#">
-                    <img src="./assets/img/Facebook.png" alt="" />
-                    <div class="fw-light fs-6">Facebook</div>
-                  </a>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                  <a href="#">
-                    <img src="./assets/img/Instagram.png" alt="" />
-                    <div class="fw-light fs-6">Instagram</div>
-                  </a>
-                </div>
-                <div class="col-6 col-md-3 text-center">
-                  <a href="#">
-                    <img src="./assets/img/Hamburger.png" alt="" />
-                    <div class="fw-light fs-6">All category</div>
-                  </a>
-                </div>
-              </div>
+            <div id="funds-spent" class="bg-white text-dark py-3 px-3 rounded-4">
+              <p>funds spent</p>
+              <h5>#51,000</h5>
             </div>
           </div>
         </div>
-      </section>
+
+        <div id="transactions-div">
+          <div id="transaction-filter" class="d-flex justify-content-between">
+            <p>Transaction</p>
+            <div>
+              <span class="me-2">Filter by</span>
+              <div class="dropdown d-inline">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="./assets/img/filter 1 (1).png" alt="">
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">All</a></li>
+                  <li><a class="dropdown-item" href="#">wallet top up</a></li>
+                  <li><a class="dropdown-item" href="#">fund spent</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white pt-5 px-3 pb-3 rounded-3">
+
+            <div class="d-flex justify-content-between border-bottom flex-column flex-lg-row mb-2">
+              <div class="d-flex">
+                <img src="./assets/img/4803539-middle 1.png" alt="" height="70px">
+                <div class="ms-2">
+                  <h5>Wallet Top Up</h5>
+                  <p>Deposit via Bank Transfer</p>
+                  <p>25th May 2024 7:30AM</p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center d-lg-block">
+                <h5 class="mb-4">#51,000</h5>
+                <button class="btn" style="background-color: #D4EDDA;">success</button>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between border-bottom flex-column flex-lg-row mb-2">
+              <div class="d-flex">
+                <img src="./assets/img/4803539-middle 1.png" alt="" height="70px">
+                <div class="ms-2">
+                  <h5>Wallet Top Up</h5>
+                  <p>Deposit via Bank Transfer</p>
+                  <p>25th May 2024 7:30AM</p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center d-lg-block">
+                <h5 class="mb-4">#51,000</h5>
+                <button class="btn" style="background-color: #D4EDDA;">success</button>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between border-bottom flex-column flex-lg-row mb-2">
+              <div class="d-flex">
+                <img src="./assets/img/4803539-middle 1.png" alt="" height="70px">
+                <div class="ms-2">
+                  <h5>Wallet Top Up</h5>
+                  <p>Deposit via Bank Transfer</p>
+                  <p>25th May 2024 7:30AM</p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center d-lg-block">
+                <h5 class="mb-4">#51,000</h5>
+                <button class="btn" style="background-color: #D4EDDA;">success</button>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between border-bottom flex-column flex-lg-row mb-2">
+              <div class="d-flex">
+                <img src="./assets/img/4803539-middle 1.png" alt="" height="70px">
+                <div class="ms-2">
+                  <h5>Wallet Top Up</h5>
+                  <p>Deposit via Bank Transfer</p>
+                  <p>25th May 2024 7:30AM</p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center d-lg-block">
+                <h5 class="mb-4">#51,000</h5>
+                <button class="btn" style="background-color: #D4EDDA;">success</button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
 
       <!-- Right Sidebar (Advertisement) -->
-      <section
-        class="rightest-div col-lg-3 col-md-5 col-xl-3 d-none d-md-block d-xl-block d-lg-block my-2"
+      <div
+        class="rightest-div col-lg-3 col-md-5 col-xl-3 "
       >
         <div class="px-5">
           <div class="bg-warning w-100 mx-auto">
@@ -404,7 +269,7 @@
             </a>
           </div>
         </div>
-      </section>
+      </div>
     </main>
 
     <!-- Add this at the bottom of your <body> tag -->
@@ -435,9 +300,31 @@
       </div>
     </nav>
 
+   <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#transactionModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="#transactionmodal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Transaction details</p>
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
+    
+    <script src="./assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <script defer src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script defer src="./assets/js/main.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
 
     <script src="./assets/js/swiper.js"></script>
   </body>
